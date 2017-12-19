@@ -1,2 +1,3 @@
-# code---merhodstudy01---python
-Find查找指定字符串所有下标
+# code---methodstudy---python
+Sort out some useful code methods by python3.
+if you want to disscuss about your thought with me, please email to 1030968239@qq.com
