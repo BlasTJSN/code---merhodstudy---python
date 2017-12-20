@@ -26,17 +26,17 @@ i = 6
 while True:
     i += 2
     for a in range(2, i):
-        is_Prime = True
+        is_True = True
         b = i - a # 保证a + b == i
         if i - a <= 1:
-            is_Prime = False # 防止b == 1
-        if is_Prime:
+            is_True = False # 防止b == 1
+        if is_True:
             for x in range(2, a):
                 if a % x == 0:
-                    is_Prime = False
+                    is_True = False
             for y in range(2, b):
                 if b % y == 0:
-                    is_Prime = False
-        if is_Prime: # 保证只出现质数的运算
+                    is_True = False
+        if is_True: # 保证只出现质数的运算
             print("%d+%d=%d" % (a, b, i))
             break # 保证每次i只出现一次
