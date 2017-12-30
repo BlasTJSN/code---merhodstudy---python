@@ -55,5 +55,14 @@ if __name__ == '__main__':
     print(list(main()))
     # print(list(my_find("hellosadsahelloasdhhelloasd", "hello")))
 
+# 使用列表推导式
+def main():
+    str = input("请输入要查询的字符串：")
+    kw = input("请输入想要查询的单词：")
+    # 使用列表推导式 对str循环切片与kw进行比较，相同则返回i(即下标)
+    return [i for i in range(len(str)) if str[i:i+len(kw)] == kw]
+
+if __name__ == '__main__':
+    print(main())
 
  
